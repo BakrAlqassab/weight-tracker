@@ -101,7 +101,7 @@ watch(
         <h2>Weight History</h2>
         <ul>
           <li v-for="(weight, index) in weights" :key="index">
-            <span>{{ weight.weight }}kg</span>
+            <span>{{ weight.weight }}kg</span> &nbsp;
             <small>{{ new Date(weight.date).toLocaleDateString() }}</small>
           </li>
         </ul>
@@ -110,4 +110,27 @@ watch(
   </main>
 </template>
 
-<style></style>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat" "sans-serif";
+}
+
+body {
+  background-color: #fff;
+}
+
+.main {
+  padding: 1.5rem;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 2rem3;
+}
+
+
+</style>
